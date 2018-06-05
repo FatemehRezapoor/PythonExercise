@@ -1,4 +1,5 @@
 # June 4, 2018
+# E26
 # List of Boolean operators:
 # ==, !=, <,>,<=, and, or, not(and) , ...
 
