@@ -1,0 +1,112 @@
+ Check: https://jeffknupp.com/blog/2014/06/18/improve-your-python-python-classes-and-object-oriented-programming/
+
+
+There are different ways to organise a code in python.
+
+Modules, classes, Dictionary and package 
+
+1- Dictionary: Is similar to list except that you can use keys to access the elements
+inside your file ( no need to use index) 
+* How to access a dictionary? 
+>>>dic=[('Hi',1),('How',2),('What',3)]
+>>>dictionary=dict(dic)
+>>>print(dictionary['Hi'])
+
+2- Module: It is a .py file which includes set of functions(methods), variables 
+or classes. ( it is like .mat file where you can call them inside another algorithem)
+* How to create a module:
+# This goes inside a name.py file
+def apple():
+	print('This is an apple')
+tangerine='I'm tangerine'
+To import
+>>>import name
+>>>name.apple()
+>>>name.tangerine
+
+3- Class: Like module which can include functions and variables. 
+IT IS LIKE A TEMPLATE TO CREATE AN OBJECT. It is like a blueprint to make an object.
+
+* How to create a class?
+>>>class myclass():
+	
+	def apple(self):
+		print('I am an apple')
+	tangerine='I am tangerine'
+		
+To use
+>>>fruit=myclass()
+>>>fruit.apple()
+>>>fruit.tangerine
+
+*IMPORTANT: You can use class more than one time in your code but you can only 
+import module once for the whole code*
+
+self is actually assigning your defined object to that specific class. In the example
+fruit is the object or in other words self for the class. 
+
+** Instance: The object created from a class is called instance. ( fruit is 
+the instance of myclass)
+
+** why do we define self and init in the class:
+It is a way to pass the object to the class. Self is actually your object.
+Python initialize your newly created empty object.
+You can even set variables on your object ( attributes )
+
+def __init__(self,arg1,arg2)
+	self.arg1=arg1
+	self.arg2=args  (This is designating attributes to your function)
+	
+----------------------------------------------------------------------------
+Classes can be thought of as blueprints for creating objects. When I define 
+a Customer class using the class keyword, I haven't actually created a 
+customer. Instead, what I've created is a sort of instruction manual for 
+constructing "customer" objects.
+
+The class Customer(object) line does not create a new customer. That is, just 
+because we've defined a Customer doesn't mean we've created one; we've merely
+ outlined the blueprint to create a Customer object. To do so, we call the 
+ class's __init__ method with the proper number of arguments.
+ 
+ init creates the object for us and define the number of arguments you need to 
+ use for the object.
+ 
+ **The rule of thumb is, don't introduce a new attribute outside of the 
+ __init__ method, otherwise you've given the caller an object that isn't 
+ fully initialized. **
+ 
+ 
+ Different type of attributes/methods:
+ 
+ Class attributes/methods are defiend in the level of class.  
+ 
+ Generally speaking, instance variables are for data unique to each instance 
+ and class variables are for attributes and methods shared by all instances 
+ of the class:
+
+
+ 
+ Static method: 
+ Functions which are defined in the level of class  and so they
+ don't require instance. They don't have any ''self'' parameter. 
+ 
+ A static method isn't useless - it's a way of putting a function into a class 
+ (because it logically belongs there), while indicating that it does not 
+ require access to the class
+ 
+Class methods: ???
+Functions which uses a class as an input ( intertitance ). 
+
+Inheritance: 
+
+Inheritance is when a class uses code constructed within another class.
+Classes called child classes or subclasses inherit methods and variables from 
+parent classes or base classes.
+
+We can think of a parent class called Parent that has class variables for 
+last_name, height, and eye_color that the child class Child will inherit 
+from the Parent.
+
+Because the Child subclass is inheriting from the Parent base class, the Child
+ class can reuse the code of Parent, allowing the programmer to use fewer lines
+ of code and decrease redundancy.
