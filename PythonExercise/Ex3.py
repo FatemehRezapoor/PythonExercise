@@ -11,3 +11,16 @@ for i in range(0, len(a)):
         pass
 
 print(b)
+
+# How to the above with a function
+def compare(a,number):
+    b=[]
+    for i in range(0, len(a)):
+        if a[i] < number:
+            b.append(a[i])
+        else:
+            pass
+
+    print(b)
+
+compare(a,number)
