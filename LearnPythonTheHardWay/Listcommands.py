@@ -64,6 +64,10 @@ print(OneD)
 print(OneD.reverse())
 print(OneD)
 
+#You can use reversed(formation) to return a reverse iterator of formation. 
+#When you call formation.reverse() it does an in place reversal of the list 
+#and returns None.
+
 # * SORT *: Sorts the list
 # print(OneD.sort())
 # print(OneD)
