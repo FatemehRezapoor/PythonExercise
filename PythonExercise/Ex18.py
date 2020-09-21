@@ -3,6 +3,7 @@
 # largest) and another number. The function decides whether or not the given number is inside the list and returns
 # (then prints) an appropriate boolean.
 
+
 mylist=list(input('Your ordered number:'))
 num=int(input('Your number is: '))
 if str(num) in mylist:

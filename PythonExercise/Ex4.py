@@ -3,6 +3,17 @@
 # (If you don’t know what a divisor is, it is a number that divides evenly into another number. For example,
 # 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
+# July 2020
+l=[]
+n = 5
+for i in range(1,n+1):
+    if n%i==0:
+        l.append(i)
+    else:
+        continue
+print(l)
+
+# June 2018
 number = int(input('Enter your number please: '))
 b = []
 for i in range(1, number + 1):

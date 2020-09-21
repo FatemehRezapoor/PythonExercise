@@ -7,6 +7,42 @@
 #Keep the game going until the user types “exit”
 #Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
+# July 2020
+
+import random
+import sys
+
+a=random.choice(range(1,9,1))
+
+while True:
+    u = input('Your guess:')
+    if u=='Exit':
+        break
+    elif int(u)==a:
+        print('Correct!')
+        break
+    elif int(u)>a:
+        print('Your Number is larger. Guess again')
+    else:
+        print('Your Number is smaller. Guess again')
+
+# Option 2
+c=True
+while c==True:
+    u = input('Your guess:')
+    if u == 'Exit':
+        c=False
+    elif int(u) == a:
+        print('Correct!')
+        c=False
+    elif int(u) > a:
+        print('Your Number is larger. Guess again')
+    else:
+        print('Your Number is smaller. Guess again')
+
+
+# Option 3
+# June 2018
 import random
 number=random.randint(1,9)
 print(number)

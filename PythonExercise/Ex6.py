@@ -2,6 +2,26 @@
 # Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that
 # reads the same forwards and backwards.)
 
+# July 2020
+a= input('Word to explore:')
+b=[]
+for i,n in enumerate(a):
+    b.append(a[len(a)-i-1])
+#print(''.join(b))
+if ''.join(b) == a:
+    print('Yes, {} is palindrome'.format(a))
+else:
+    print('No, {} is not palindrome'.format(a))
+
+# NOTES:
+a1=[1,2]
+a1.reverse()
+print(a1)
+# or
+print(list(reversed(a1)))
+print(type(list))
+
+# June 2018
 # Method 1 ( Using list )
 a = input('word: \t')
 b = []
